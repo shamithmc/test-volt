@@ -1,0 +1,10 @@
+voltdb:
+  nodes:
+  - host: env6-node2.trv.flytxt.com
+    port: 31530
+  - host: env6-node2.trv.flytxt.com
+    port: 31573
+  - host: env6-node2.trv.flytxt.com
+    port: 31031
+  username: aaa
+  password: bbb
