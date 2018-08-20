@@ -1,10 +1,32 @@
 voltdb:
   nodes:
-  - host: env6-node2.trv.flytxt.com
-    port: 31530
-  - host: env6-node2.trv.flytxt.com
-    port: 31573
-  - host: env6-node2.trv.flytxt.com
-    port: 31031
-  username: aaa
-  password: bbb
+#  - host: voltdb1-database-neon.marathon
+#    port: 21212
+#    marathonAppId: neon/database/voltdb1
+#  - host: voltdb2-database-neon.marathon
+#    port: 21212
+#    marathonAppId: neon/database/voltdb2
+  - host: 1-voltdb-infra-neon.marathon
+    port: 21212
+    marathonAppId: neon/infra/voltdb/1
+
+  
+marathon:
+  resolve: true
+  host:
+    url: http://192.168.14.21:8080
+    
+    
+partitionToUse: 2
+
+bcCountPerPartition: 10
+
+subscriberCount: 500000
+
+startMsisdn: 919200000000
+
+
+---
+spring:
+  profiles: messaging
+
