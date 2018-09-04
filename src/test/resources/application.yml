@@ -18,7 +18,9 @@ voltdb:
 marathon:
   resolve: true
   host:
-    url: http://192.168.14.21:8080
+    url: http://192.168.150.141:8080
+    username: flyuser
+    password: flypassWORD
     
     
 partitionToUse: 2
